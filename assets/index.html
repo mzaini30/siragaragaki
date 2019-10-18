@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Siraga Ragaki</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+	<style type="text/css">
+		.sembunyi {
+			display: none;
+		}
+
+		.full {
+			width: 100%;
+		}
+
+		.di-atas {
+			position: fixed;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			max-width: 600px;
+		}
+
+		.di-atas p,
+		.di-atas a:hover,
+		.di-atas a:active,
+		.di-atas a:focus,
+		.di-atas a:visited {
+			text-align: center;
+			text-decoration: none;
+			margin-top: 10px;
+			color: #3a3b43;
+			font-size: 12px;
+		}
+
+		.tombol {
+			width: 30px;
+			height: auto;
+			position: fixed;
+			right: 15px;
+			top: 15px;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<div class="loading">
+	<!-- <div class="loading sembunyi"> -->
+		<img src="media/SPALSH SCREEN.png" class="full">
+	</div>
+	<div class="isi sembunyi">
+	<!-- <div class="isi"> -->
+		<img src="media/HOME SCREEN.png" class="full">
+		<div class="di-atas">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-xs-4">
+						<a href="http://siragaraga.penmadkotaparepare.com/gate-kepala/gate.php">
+							<img src="media/IKON/kamad.png" class="full">
+							<p>KAMAD</p>
+						</a>
+					</div>
+					<div class="col-xs-4">
+						<a href="http://siragaraga.penmadkotaparepare.com/gate-guru/gate.php">
+							<img src="media/IKON/GURU.png" class="full">
+							<p>GURU</p>
+						</a>
+					</div>
+					<div class="col-xs-4">
+						<a href="http://siragaraga.penmadkotaparepare.com/gate-ortu/gate.php">
+							<img src="media/IKON/ORTU.png" class="full">
+							<p>ORTU</p>
+						</a>
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<div class="col-xs-4">
+						<a href="http://siragaraga.penmadkotaparepare.com/gate-siswa/gate.php">
+							<img src="media/IKON/SISWA.png" class="full">
+							<p>SISWA</p>
+						</a>
+					</div>
+					<div class="col-xs-4">
+						<a href="#!">
+							<img src="media/IKON/DETAIL.png" class="full">
+							<p>DETAIL</p>
+						</a>
+					</div>
+					<div class="col-xs-4">
+						<a href="https://qrscanneronline.com/">
+							<img src="media/IKON/QR CODE.png" class="full">
+							<p>QR CODE</p>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<img src="media/pentung.png" alt="" class="tombol">
+	</div>
+	<script type="text/javascript" src="vendor/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="vendor/not paid/not-paid.js"></script>
+	<script type="text/javascript" src="vendor/swal/sweetalert.min.js"></script>
+	<script type="text/javascript">
+		hapus_loading = function(){
+			$('.isi').removeClass('sembunyi')
+			$('.loading').addClass('sembunyi')
+		}
+		setTimeout(hapus_loading, 2000)
+
+		$('.tombol').click(function(){
+			swal('Siraga-ragaki adalah sistem informasi dari seksi pendidikan madrasah kota parepare yang bertujuan menjadikan kepala madrasah, guru, siswa dan orang tua turut serta dalam mencapai tujuan pendidikan setiap peserta didik')
+		})
+	</script>
+</body>
+</html>
